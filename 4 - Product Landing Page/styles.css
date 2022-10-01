@@ -1,0 +1,306 @@
+:root {
+  --color1: #eeeeee;
+  --color2: #000000;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-style: Arial, sans-serif;
+}
+/*    ↑  M A I N  ↑   */
+
+body {
+  background-color: var(--color1);
+  font-family: 'Lato', sans-serif;
+}
+
+#main-content {
+  margin-top: 7.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p, ol li {
+  font-size: 1.6rem;
+}
+
+/*    H E A D E R   */
+#header {
+  width: 100vw;
+  height: 7.5rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color1);
+}
+
+.logo {
+  width: 60vw;
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+#header-img {
+  max-height: 100%;
+  width: 100%;
+  max-width: 30rem;
+}
+
+#nav-bar ul {
+  width: 35vw;
+  display: flex;
+  margin-right: 2rem;
+}
+
+ul li {
+  list-style: none;
+  margin: auto;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color2);
+}
+
+/*    H E R O    */
+#hero {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form {
+  display: block;
+  text-align:center;
+}
+
+#form input[type="email"] {
+  width: 100%;
+  max-width: 27.5rem;
+  padding: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+#form input[type="submit"] {
+  width: 100%;
+  max-width: 15rem;
+  padding: 1rem;
+  background-color: #f1c40f;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+/*    F E A T U R E S    */
+#features {
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: flex;
+  height: 12.5rem;
+}
+
+.icon {
+  width: 20%;
+  color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.description {
+  width: 80%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description h2 {
+  margin-bottom: 0.5rem;
+}
+
+#how-it-works {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pricing {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pricing ol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#pricing ol li {
+  list-style: none;
+}
+
+#pricing .level {
+  font-size: 1.8rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.level {
+  min-width: 30rem;
+  padding: 2rem 0;
+  margin-bottom: 1.6rem;
+  background-color: #dddddd;
+}
+
+.level h2 {
+  margin: 1.6rem;
+}
+
+.product ol {
+  margin: 1.6rem 0;
+}
+
+.btn {
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  margin: 1.6rem 0;
+  background-color: #f1c40f;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #dddddd;
+  max-width: 100rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer ul {
+  width: 18rem;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0 1rem 0;
+}
+
+footer ul li, footer p {
+  font-size: 1.6rem;
+}
+
+footer p {
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+  color: #444444;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2rem;
+}
+
+@media (max-width: 600px) {
+  #header {
+    width: 100vw;
+    height: 13.5rem;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color1);
+  }
+  
+  .logo {
+    width: 100vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+  
+  #header-img {
+    width: 30rem;
+  }
+  
+  #nav-bar ul {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  #main-content {
+    margin-top: 13.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  
+  #pricing {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
